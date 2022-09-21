@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Pallindrome Checker</title>
+  </head>
+  <body class="h-screen w-full flex items-center justify-center bg-gray-800">
+    <div id="bg-area" class="flex flex-col items-center justify-center gap-4 font-bold bg-gray-400 p-4 rounded-lg">
+      <h1 class="text-lg">Welcome to the Pallindrome Checker</h1>
+      <textarea
+        id="textArea"
+        rows="1"
+        class="p-1 md:p-2 w-80 border border-black rounded-lg"
+        oninput="check()"
+      ></textarea>
+      <p id="output">Pallindrome</p>
+    </div>
+  </body>
+  <script src="./script.js"></script>
+</html>
